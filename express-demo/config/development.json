@@ -1,0 +1,7 @@
+{
+  "name": "My express app - Development",
+  "mail": {
+    "host": "dev-mail-server"
+  },
+  "port": 5000
+}
