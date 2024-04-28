@@ -4,6 +4,7 @@ const morganDebugger = require("debug")("app:morgan");
 const genres = require("./routes/genres");
 const customers = require("./routes/customers");
 const movies = require("./routes/movies");
+const rentals = require("./routes/rentals");
 const portDebugger = require("debug")("app:port");
 const dbDebugger = require("debug")("app:db");
 const mongoose = require("mongoose");
@@ -24,6 +25,7 @@ app.use(express.json());
 app.use("/api/genres", genres);
 app.use("/api/customers", customers);
 app.use("/api/movies", movies);
+app.use("/api/rentals", rentals);
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {
