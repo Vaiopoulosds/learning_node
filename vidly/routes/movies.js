@@ -1,7 +1,6 @@
 const express = require("express");
 const { MovieModel, validate } = require("../models/movie");
 const { GenreModel } = require("../models/genre");
-const mongoose = require("mongoose");
 const debug = require("debug")("app:debug-movies");
 const router = express.Router();
 require("dotenv").config();
@@ -46,9 +45,7 @@ router.put("/:title", async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  const genre = await GenreModel.findById(req.body.genreId).catch((err) => {
-    return  console.log(err.message);
-  });
+  const genre = await GenreModel.findById(req.body.genreId)
   if (!genre) return res.status(400).send("Invalid genre.");
 
   const movie = await MovieModel.findOne({ title: req.params.title });

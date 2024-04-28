@@ -1,6 +1,5 @@
 const express = require("express");
 const { GenreModel, validate } = require("../models/genre");
-const mongoose = require("mongoose");
 const debug = require("debug")("app:debug-genre");
 const router = express.Router();
 require("dotenv").config();

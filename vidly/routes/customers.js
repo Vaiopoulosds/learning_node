@@ -1,6 +1,5 @@
 const express = require("express");
 const {CustomerModel, validate} = require("../models/customer")
-const mongoose = require("mongoose");
 const debug = require("debug")("app:debug-customer");
 const router = express.Router();
 require("dotenv").config();

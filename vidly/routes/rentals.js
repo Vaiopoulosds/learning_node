@@ -3,7 +3,6 @@ const { MongoClient } = require("mongodb");
 const { RentalModel, validate } = require("../models/rental");
 const { CustomerModel } = require("../models/customer");
 const { MovieModel } = require("../models/movie");
-const mongoose = require("mongoose");
 const debug = require("debug")("app:debug-rentals");
 const router = express.Router();
 require("dotenv").config();
