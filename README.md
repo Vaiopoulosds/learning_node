@@ -9,5 +9,6 @@
   <li> Asynchronous JavaScript</li>
   <li> CRUD Operations Using Mongoose</li>
   <li> Mongo - Data Validation</li>
-  <li> Mongoose- Modeling Relationships between Connected Data(currently in)</li>
+  <li> Mongoose- Modeling Relationships between Connected Data</li>
+  <li> Authentication and Authorization(currently in)</li>
 </ul>
